@@ -11,7 +11,6 @@ djangocms-column==1.5
 djangocms-file==0.1
 djangocms-flash==0.2.0
 djangocms-googlemap==0.3
-djangocms-inherit==0.1
 djangocms-installer==0.8.1
 djangocms-link==1.7.1
 djangocms-picture==0.1
