@@ -1,5 +1,5 @@
 import os,sys
-virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
+virtenv = os.path.expanduser('~') + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
 try:
     if sys.version.split(' ')[0].split('.')[0] == '3':
@@ -8,10 +8,6 @@ try:
         execfile(virtualenv, dict(__file__=virtualenv))
 except IOError:
     pass
-  
-  
-sys.path.append('/opt/repo')
-sys.path.append('/opt/repo/ROOT')
   
 os.environ['DJANGO_SETTINGS_MODULE'] = 'ROOT.settings'
 
