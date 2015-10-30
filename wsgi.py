@@ -8,7 +8,9 @@ try:
         execfile(virtualenv, dict(__file__=virtualenv))
 except IOError:
     pass
-  
+
+sys.path.append(os.path.expanduser('~'))
+
 os.environ['DJANGO_SETTINGS_MODULE'] = 'ROOT.settings'
 
 from django.core.wsgi import get_wsgi_application
