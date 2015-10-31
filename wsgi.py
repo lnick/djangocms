@@ -10,6 +10,7 @@ except IOError:
     pass
 
 sys.path.append(os.path.expanduser('~'))
+sys.path.append(os.path.expanduser('~') + '/ROOT/')
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'ROOT.settings'
 
