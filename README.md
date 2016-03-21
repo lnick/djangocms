@@ -1,1 +1,1 @@
-# djangocms
+# djangocms package
